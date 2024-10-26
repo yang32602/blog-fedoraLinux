@@ -1,100 +1,175 @@
 import Image from "next/image";
+import Link from "next/link";
+import NavBar from "./componentes/Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      {/* Header */}
+      <header className="text-center py-10 border-b border-gray-200">
+        <h1 className="text-5xl font-bold text-blue-700">Fedora Linux: Innovación y Estabilidad en Software Libre</h1>
+        <p className="mt-2 text-lg text-gray-600">Explora el mundo de Fedora Linux y descubre sus características únicas.</p>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Navigation */}
+      <NavBar />
+
+      {/* Introducción */}
+      <section id="introduccion" className="mt-10 mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Introducción</h2>
+        <p className="mt-2 text-gray-700 text-lg">
+          Fedora Linux es uno de los sistemas operativos basados en Linux más populares y reconocidos por su enfoque en la innovación, seguridad y contribución a la comunidad de software libre. Desarrollado por el Proyecto Fedora, patrocinado por Red Hat, Fedora es utilizado tanto por desarrolladores como por usuarios avanzados, y es ideal para quienes buscan un sistema operativo moderno, estable y adaptable.
+        </p>
+      </section>
+
+      {/* Breve Reseña Histórica */}
+      <section id="historia" className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Breve Reseña Histórica</h2>
+        <p className="mt-2 text-gray-700 text-lg">
+          Fedora nació en 2003, como una alternativa libre a Red Hat Linux. Desde sus inicios, ha priorizado la innovación y las actualizaciones constantes, incorporando rápidamente las últimas tecnologías del ecosistema Linux. El Proyecto Fedora ha crecido hasta convertirse en una comunidad activa, respaldada por Red Hat, con diferentes "spins" que ofrecen versiones específicas de Fedora para diferentes necesidades, como servidores, IoT, y sistemas de escritorio.
+        </p>
+      </section>
+
+      {/* Detalle del Sistema Operativo */}
+      <section id="detalle" className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Detalle del Sistema Operativo</h2>
+        <div className="my-4 text-center">
+          <Image src="/fedora-gnome.png" alt="Interfaz de Fedora con GNOME" width={600} height={400} className="rounded-lg shadow-md" />
+          <p className="mt-2 text-gray-600 italic">Figura No. 1. Interfaz de Fedora con GNOME</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        <h3 className="text-xl font-medium text-gray-800">Requerimientos del Sistema</h3>
+        <p className="mt-2 text-gray-700">Fedora está diseñado para funcionar en una amplia variedad de hardware. Aquí están los requerimientos básicos:</p>
+        <ul className="list-disc pl-6 mt-2 text-gray-700">
+          <li>Procesador: Intel o AMD de 64 bits</li>
+          <li>RAM: 2 GB (mínimo), 4 GB (recomendado)</li>
+          <li>Espacio en disco: 20 GB (mínimo), 50 GB (recomendado)</li>
+          <li>Tarjeta gráfica: soporte para gráficos básicos o aceleración 3D.</li>
+        </ul>
+      </section>
+
+      {/* Cuadro Comparativo */}
+      <section id="comparativo" className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Cuadro Comparativo con Otros Sistemas Operativos</h2>
+        <table className="w-full mt-4 border-collapse border border-gray-300 shadow-md">
+          <thead className="bg-gray-100">
+            <tr>
+              <th className="border border-gray-300 px-4 py-2">Características</th>
+              <th className="border border-gray-300 px-4 py-2">Fedora</th>
+              <th className="border border-gray-300 px-4 py-2">Ubuntu</th>
+              <th className="border border-gray-300 px-4 py-2">Windows 11</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="border border-gray-300 px-4 py-2">Frecuencia de actualizaciones</td>
+              <td className="border border-gray-300 px-4 py-2">Cada 6 meses</td>
+              <td className="border border-gray-300 px-4 py-2">Cada 6 meses (LTS cada 2 años)</td>
+              <td className="border border-gray-300 px-4 py-2">Cada 6 meses</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-2">Estabilidad</td>
+              <td className="border border-gray-300 px-4 py-2">Alta, ideal para desarrollo</td>
+              <td className="border border-gray-300 px-4 py-2">Alta, enfocado en usuarios finales</td>
+              <td className="border border-gray-300 px-4 py-2">Alta, versátil para distintos usuarios</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-2">Ventajas</td>
+              <td className="border border-gray-300 px-4 py-2">Últimas tecnologías, excelente para desarrolladores</td>
+              <td className="border border-gray-300 px-4 py-2">Amigable, fácil para nuevos usuarios</td>
+              <td className="border border-gray-300 px-4 py-2">Amplia comunidad, soporte de Microsoft</td>
+            </tr>
+            <tr>
+              <td className="border border-gray-300 px-4 py-2">Desventajas</td>
+              <td className="border border-gray-300 px-4 py-2">Requiere actualización frecuente</td>
+              <td className="border border-gray-300 px-4 py-2">Actualización menos frecuente, menos innovador</td>
+              <td className="border border-gray-300 px-4 py-2">Requiere más recursos, versiones pueden ser pesadas</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      {/* Video */}
+      <section id="video" className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Video Ilustrativo</h2>
+        <div className="mt-4 h-96">
+          <iframe className="w-full h-full rounded-lg shadow-md" src="https://www.youtube.com/embed/K3t9ZWIac7k" title="Introducción a Fedora Linux" allowFullScreen></iframe>
+        </div>
+        <p className="mt-2 text-gray-600">A quick look at Fedora Linux</p>
+        <p className="text-gray-500 text-sm">Fuente: <a href="https://www.youtube.com/watch?v=K3t9ZWIac7k" className="text-blue-500 underline">Video de origen</a></p>
+      </section>
+
+      {/* Hipervínculos */}
+      <section className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Hipervínculos Relacionados</h2>
+        <ul className="list-disc pl-6 mt-2">
+          <li><a href="https://getfedora.org/" className="text-blue-500 underline">Página oficial de Fedora</a></li>
+          <li><a href="https://docs.fedoraproject.org/" className="text-blue-500 underline">Documentación de Fedora</a></li>
+        </ul>
+      </section>
+
+      {/* Conclusiones */}
+      <section id="conclusiones" className="mb-8">
+        <h2 className="text-3xl font-semibold text-blue-600">Conclusiones</h2>
+        <p className="mt-2 text-gray-700 text-lg">
+          Fedora Linux es una excelente opción para usuarios avanzados y desarrolladores que buscan una experiencia de Linux innovadora. Su compromiso con la última tecnología y la colaboración de la comunidad lo hacen un sistema operativo de referencia en el mundo del software libre.
+        </p>
+      </section>
+
+      {/* Referencias */}
+      <section id="referencias">
+        <h2 className="text-3xl font-semibold text-blue-600">Referencias</h2>
+        <ul className="list-disc pl-6 mt-2 text-gray-700">
+          <li>Fedora Project. (n.d.). <a href="https://getfedora.org/" className="text-blue-500 underline">Fedora Official Website</a>.</li>
+          <li>Wikipedia. (2024). <a href="https://es.wikipedia.org/wiki/Fedora" className="text-blue-500 underline">Fedora (sistema operativo)</a>.</li>
+          <li>Linux Journal. (2024). <a href="https://www.linuxjournal.com/" className="text-blue-500 underline">Linux Journal</a>.</li>
+        </ul>
+      </section>
+
+
+      {/*Información del Grupo */}
+      <section id="grupo" className="mb-8 mt-12">
+      <h2 className="text-3xl font-semibold text-blue-600">Información del Grupo</h2>
+        <p className="mt-2 text-gray-700 text-lg">Nombre del Profesor: <strong>Isaac Esquivel</strong></p>
+        <p className="mt-2 text-gray-700 text-lg">Institución: <strong>Universidad Tecnológica de Panama</strong></p>
+        <p className="mt-2 text-gray-700 text-lg">Facultad: <strong>Facultad de Sistema Computacional</strong></p>
+        <p className="mt-2 text-gray-700 text-lg">Departamento: <strong>Departamento de Sistemas</strong></p>
+        <p className="mt-2 text-gray-700 text-lg">Carrera: <strong>Licenciatura en Desarrollo de Software</strong></p>
+        <p className="mt-2 text-gray-700 text-lg">Grupo: <strong>Grupo 3</strong></p> <br/>
+
+        <h2 className="text-3xl font-semibold text-blue-600">Integrantes</h2>
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="flex flex-col items-center">
+            <Image src="/freddy.jpeg" alt="Foto de integrante 1" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Freddy Pan</h3>
+            <p className="text-gray-600">Correo: freddy.pan@utp.ac.pa</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image src="/ruta/a/imagen2.jpg" alt="Foto de integrante 2" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Nombre 2</h3>
+            <p className="text-gray-600">Correo: nombre2@example.com</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image src="/ruta/a/imagen3.jpg" alt="Foto de integrante 3" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Nombre 3</h3>
+            <p className="text-gray-600">Correo: nombre3@example.com</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image src="/ruta/a/imagen4.jpg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Nombre 4</h3>
+            <p className="text-gray-600">Correo: nombre4@example.com</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <Image src="/ruta/a/imagen4.jpg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Nombre 5</h3>
+            <p className="text-gray-600">Correo: nombre4@example.com</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-4 mt-10 border-t">
+        <p className="text-gray-600">&copy; {new Date().getFullYear()} Freddy Pan. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
