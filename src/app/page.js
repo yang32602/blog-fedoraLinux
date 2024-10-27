@@ -152,9 +152,9 @@ export default function Home() {
             <p className="text-gray-600">Correo: alessandro.marconi@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/ruta/a/imagen3.jpg" alt="Foto de integrante 3" width={150} height={150} className="rounded-full shadow-md" />
-            <h3 className="mt-2 font-medium text-lg">Nombre 3</h3>
-            <p className="text-gray-600">Correo: nombre3@example.com</p>
+            <Image src="/Diego.jpeg" alt="Foto de integrante 3" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Diego Navarro</h3>
+            <p className="text-gray-600">Correo: Diego.navarro2@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
             <Image src="/ruta/a/imagen4.jpg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
