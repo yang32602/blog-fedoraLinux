@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "./componentes/Navbar";
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 
 export default function Home() {
   return (
@@ -52,42 +61,42 @@ export default function Home() {
       {/* Cuadro Comparativo */}
       <section id="comparativo" className="mb-8">
         <h2 className="text-3xl font-semibold text-blue-600">Cuadro comparando con otros OS</h2>
-        <table className="w-full mt-4 border-collapse border border-gray-300 shadow-md">
-          <thead className="bg-gray-100">
-            <tr>
-              <th className="border border-gray-300 px-4 py-2">Características</th>
-              <th className="border border-gray-300 px-4 py-2">Fedora</th>
-              <th className="border border-gray-300 px-4 py-2">Ubuntu</th>
-              <th className="border border-gray-300 px-4 py-2">Windows 11</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border border-gray-300 px-4 py-2">Frecuencia de actualizaciones</td>
-              <td className="border border-gray-300 px-4 py-2">Cada 6 meses</td>
-              <td className="border border-gray-300 px-4 py-2">Cada 6 meses (LTS cada 2 años)</td>
-              <td className="border border-gray-300 px-4 py-2">Cada 6 meses</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-300 px-4 py-2">Estabilidad</td>
-              <td className="border border-gray-300 px-4 py-2">Alta, ideal para desarrollo</td>
-              <td className="border border-gray-300 px-4 py-2">Alta, enfocado en usuarios finales</td>
-              <td className="border border-gray-300 px-4 py-2">Alta, versátil para distintos usuarios</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-300 px-4 py-2">Ventajas</td>
-              <td className="border border-gray-300 px-4 py-2">Últimas tecnologías, excelente para desarrolladores</td>
-              <td className="border border-gray-300 px-4 py-2">Amigable, fácil para nuevos usuarios</td>
-              <td className="border border-gray-300 px-4 py-2">Amplia comunidad, soporte de Microsoft</td>
-            </tr>
-            <tr>
-              <td className="border border-gray-300 px-4 py-2">Desventajas</td>
-              <td className="border border-gray-300 px-4 py-2">Requiere actualización frecuente</td>
-              <td className="border border-gray-300 px-4 py-2">Actualización menos frecuente, menos innovador</td>
-              <td className="border border-gray-300 px-4 py-2">Requiere más recursos, versiones pueden ser pesadas</td>
-            </tr>
-          </tbody>
-        </table>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[100px]">Características</TableHead>
+              <TableHead>Fedora</TableHead>
+              <TableHead>Ubuntu</TableHead>
+              <TableHead>Windows 11</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              <TableCell>Frecuencia de actualizaciones</TableCell>
+              <TableCell>Cada 6 meses</TableCell>
+              <TableCell>Cada 6 meses (LTS cada 2 años)</TableCell>
+              <TableCell>Cada 6 meses</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Estabilidad</TableCell>
+              <TableCell>Alta, ideal para desarrollo</TableCell>
+              <TableCell>Alta, enfocado en usuarios finales</TableCell>
+              <TableCell>Alta, versátil para distintos usuarios</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Ventajas</TableCell>
+              <TableCell>Últimas tecnologías, excelente para desarrolladores</TableCell>
+              <TableCell>Amigable, fácil para nuevos usuarios</TableCell>
+              <TableCell>Amplia comunidad, soporte de Microsoft</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Desventajas</TableCell>
+              <TableCell>Requiere actualización frecuente</TableCell>
+              <TableCell>Actualización menos frecuente, menos innovador</TableCell>
+              <TableCell>Requiere más recursos, versiones pueden ser pesadas</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
       </section>
 
       {/* Video */}
@@ -131,13 +140,13 @@ export default function Home() {
       {/*Información del Grupo */}
       <section id="grupo" className="mb-8 mt-12 text-center">
         <h2 className="text-3xl font-semibold text-blue-600">Información del Grupo</h2>
-          <p className="mt-2 text-gray-700 text-lg">Profesor:</p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Isaac Esquivel</strong></p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Universidad Tecnológica de Panama</strong></p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Facultad de Sistema Computacionales</strong></p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Departamento de Sistemas</strong></p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Licenciatura en Desarrollo de Software</strong></p>
-          <p className="mt-2 text-gray-700 text-lg"><strong>Grupo 3</strong></p> <br/>
+        <p className="mt-2 text-gray-700 text-lg">Profesor:</p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Isaac Esquivel</strong></p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Universidad Tecnológica de Panama</strong></p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Facultad de Sistema Computacionales</strong></p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Departamento de Sistemas</strong></p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Licenciatura en Desarrollo de Software</strong></p>
+        <p className="mt-2 text-gray-700 text-lg"><strong>Grupo 3</strong></p> <br />
 
         <h2 className="text-3xl font-semibold text-blue-600">Integrantes</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -157,9 +166,9 @@ export default function Home() {
             <p className="text-gray-600">Correo: Diego.navarro2@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/ruta/a/imagen4.jpg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
-            <h3 className="mt-2 font-medium text-lg">Nombre 4</h3>
-            <p className="text-gray-600">Correo: nombre4@example.com</p>
+            <Image src="/Rafael.jpeg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Rafael Chung</h3>
+            <p className="text-gray-600">Correo: rafael.chung@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
             <Image src="/ruta/a/imagen4.jpg" alt="Foto de integrante 4" width={150} height={150} className="rounded-full shadow-md" />
