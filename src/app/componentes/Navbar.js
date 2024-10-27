@@ -5,13 +5,13 @@ import Link from "next/link";
 const NavBar = () => {
   return (
     <nav className="fixed left-0 top-0 h-full bg-gray-800 shadow-lg rounded-lg p-6 transition-transform duration-300">
-      <h2 className="text-white text-2xl font-bold mb-6">Navegación</h2>
+      <h2 className="text-white text-2xl font-bold mb-6">Blog Grupo 3</h2>
       <ul className="flex flex-col space-y-4">
         {[
           { href: "#introduccion", text: "Introducción" },
           { href: "#historia", text: "Historia" },
           { href: "#detalle", text: "Detalle" },
-          { href: "#comparativo", text: "Comparativo" },
+          { href: "#comparativo", text: "Cuadro Comparativo" },
           { href: "#video", text: "Video" },
           { href: "#conclusiones", text: "Conclusiones" },
           { href: "#referencias", text: "Referencias" },

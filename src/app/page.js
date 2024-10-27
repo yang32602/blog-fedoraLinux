@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="text-center py-10 border-b border-gray-200">
         <h1 className="text-5xl font-bold text-blue-700">Fedora Linux: Innovación y Estabilidad en Software Libre</h1>
-        <p className="mt-2 text-lg text-gray-600">Un blog que te contara un poquito mas sobre este maravilloso sitema operativo.</p>
+        <p className="mt-2 text-lg text-gray-600">Un blog que te contara un poquito más sobre este maravilloso sitema operativo.</p>
       </header>
 
       {/* Navigation */}
@@ -34,8 +34,9 @@ export default function Home() {
       <section id="detalle" className="mb-8">
         <h2 className="text-3xl font-semibold text-blue-600">Detalles del Sistema Operativo</h2>
         <div className="my-4 text-center">
-          <Image src="/fedoragnome.jpg" alt="Interfaz de Fedora con GNOME" width={600} height={400} className="rounded-lg shadow-md" />
-          <p className="mt-2 text-gray-600 italic">Figura No. 1. Interfaz de Fedora con GNOME</p>
+          <Image src="/fedora.jpg" alt="Interfaz de Fedora" width={600} height={400} className="rounded-lg shadow-md" />
+          <p className="mt-2 text-gray-600 italic">Figura No. 1. Fedora 26 workstation</p>
+          <p className="mt-2 text-gray-600 italic">Fuente: Marius Nestor (2017), <a href="https://news.softpedia.com/news/fedora-26-linux-officially-released-ships-with-gnome-3-24-and-linux-kernel-4-11-516921.shtml" className="text-blue-500 underline">Fedora workstation</a></p>
         </div>
 
         <h3 className="text-xl font-medium text-gray-800">Requerimientos del Sistema</h3>
