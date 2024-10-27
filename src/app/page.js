@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="text-center py-10 border-b border-gray-200">
         <h1 className="text-5xl font-bold text-blue-700">Fedora Linux: Innovación y Estabilidad en Software Libre</h1>
-        <p className="mt-2 text-lg text-gray-600">Explora el mundo de Fedora Linux y descubre sus características únicas.</p>
+        <p className="mt-2 text-lg text-gray-600">Un blog que te contara un poquito mas sobre este maravilloso sitema operativo.</p>
       </header>
 
       {/* Navigation */}
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Breve Reseña Histórica */}
       <section id="historia" className="mb-8">
-        <h2 className="text-3xl font-semibold text-blue-600">Breve Reseña Histórica</h2>
+        <h2 className="text-3xl font-semibold text-blue-600">Historia</h2>
         <p className="mt-2 text-gray-700 text-lg">
           Fedora nació en 2003, como una alternativa libre a Red Hat Linux. Desde sus inicios, ha priorizado la innovación y las actualizaciones constantes, incorporando rápidamente las últimas tecnologías del ecosistema Linux. El Proyecto Fedora ha crecido hasta convertirse en una comunidad activa, respaldada por Red Hat, con diferentes "spins" que ofrecen versiones específicas de Fedora para diferentes necesidades, como servidores, IoT, y sistemas de escritorio.
         </p>
@@ -32,9 +32,9 @@ export default function Home() {
 
       {/* Detalle del Sistema Operativo */}
       <section id="detalle" className="mb-8">
-        <h2 className="text-3xl font-semibold text-blue-600">Detalle del Sistema Operativo</h2>
+        <h2 className="text-3xl font-semibold text-blue-600">Detalles del Sistema Operativo</h2>
         <div className="my-4 text-center">
-          <Image src="/fedora-gnome.png" alt="Interfaz de Fedora con GNOME" width={600} height={400} className="rounded-lg shadow-md" />
+          <Image src="/fedoragnome.jpg" alt="Interfaz de Fedora con GNOME" width={600} height={400} className="rounded-lg shadow-md" />
           <p className="mt-2 text-gray-600 italic">Figura No. 1. Interfaz de Fedora con GNOME</p>
         </div>
 
@@ -50,7 +50,7 @@ export default function Home() {
 
       {/* Cuadro Comparativo */}
       <section id="comparativo" className="mb-8">
-        <h2 className="text-3xl font-semibold text-blue-600">Cuadro Comparativo con Otros Sistemas Operativos</h2>
+        <h2 className="text-3xl font-semibold text-blue-600">Cuadro comparando con otros OS</h2>
         <table className="w-full mt-4 border-collapse border border-gray-300 shadow-md">
           <thead className="bg-gray-100">
             <tr>
@@ -128,14 +128,15 @@ export default function Home() {
 
 
       {/*Información del Grupo */}
-      <section id="grupo" className="mb-8 mt-12">
-      <h2 className="text-3xl font-semibold text-blue-600">Información del Grupo</h2>
-        <p className="mt-2 text-gray-700 text-lg">Nombre del Profesor: <strong>Isaac Esquivel</strong></p>
-        <p className="mt-2 text-gray-700 text-lg">Institución: <strong>Universidad Tecnológica de Panama</strong></p>
-        <p className="mt-2 text-gray-700 text-lg">Facultad: <strong>Facultad de Sistema Computacional</strong></p>
-        <p className="mt-2 text-gray-700 text-lg">Departamento: <strong>Departamento de Sistemas</strong></p>
-        <p className="mt-2 text-gray-700 text-lg">Carrera: <strong>Licenciatura en Desarrollo de Software</strong></p>
-        <p className="mt-2 text-gray-700 text-lg">Grupo: <strong>Grupo 3</strong></p> <br/>
+      <section id="grupo" className="mb-8 mt-12 text-center">
+        <h2 className="text-3xl font-semibold text-blue-600">Información del Grupo</h2>
+          <p className="mt-2 text-gray-700 text-lg">Profesor:</p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Isaac Esquivel</strong></p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Universidad Tecnológica de Panama</strong></p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Facultad de Sistema Computacionales</strong></p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Departamento de Sistemas</strong></p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Licenciatura en Desarrollo de Software</strong></p>
+          <p className="mt-2 text-gray-700 text-lg"><strong>Grupo 3</strong></p> <br/>
 
         <h2 className="text-3xl font-semibold text-blue-600">Integrantes</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -145,9 +146,9 @@ export default function Home() {
             <p className="text-gray-600">Correo: freddy.pan@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
-            <Image src="/ruta/a/imagen2.jpg" alt="Foto de integrante 2" width={150} height={150} className="rounded-full shadow-md" />
-            <h3 className="mt-2 font-medium text-lg">Nombre 2</h3>
-            <p className="text-gray-600">Correo: nombre2@example.com</p>
+            <Image src="/marconi.jpg" alt="Foto de integrante 2" width={150} height={150} className="rounded-full shadow-md" />
+            <h3 className="mt-2 font-medium text-lg">Alessandro Marconi</h3>
+            <p className="text-gray-600">Correo: alessandro.marconi@utp.ac.pa</p>
           </div>
           <div className="flex flex-col items-center">
             <Image src="/ruta/a/imagen3.jpg" alt="Foto de integrante 3" width={150} height={150} className="rounded-full shadow-md" />
@@ -169,7 +170,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-center py-4 mt-10 border-t">
-        <p className="text-gray-600">&copy; {new Date().getFullYear()} Freddy Pan. Todos los derechos reservados.</p>
+        <p className="text-gray-600">&copy; {new Date().getFullYear()} Grupo 3 Todos los derechos reservados.</p>
       </footer>
     </div>
   );
