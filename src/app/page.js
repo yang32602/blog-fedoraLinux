@@ -206,9 +206,9 @@ export default function Home() {
               alt: "Foto de integrante 4",
             },
             {
-              name: "Nombre 5",
-              email: "nombre4@example.com",
-              imageSrc: "/ruta/a/imagen4.jpg",
+              name: "Jaime Rojas",
+              email: "Jaime.rojas@utp.ac.pa",
+              imageSrc: "/Jaime.jpg",
               alt: "Foto de integrante 5",
             },
           ].map((integrante, index) => (
